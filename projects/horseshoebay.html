@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Horseshoe Bay - CyprusCy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #000;
+      color: #fff;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: auto;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .navbar .nav-link {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .navbar .nav-link.active {
+      color: #ffd700;
+    }
+
+    header.masthead {
+      background-image: url("imgs/bg-masthead.jpg"), linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+
+    header.masthead h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      position: relative; /* Добавьте позиционирование, чтобы текст находился над overlay */
+      z-index: 2;
+    }
+
+    .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Измените прозрачность (alpha) для желаемого эффекта */
+      z-index: 1; /* Убедитесь, что overlay находится над картинкой */
+    }
+
+    .arrow-down {
+      color: #fff;
+      font-size: 24px;
+      margin-top: 20px;
+      cursor: pointer;
+      position: relative; /* Добавьте позиционирование, чтобы стрелка находилась над overlay */
+      z-index: 2; /* Убедитесь, что стрелка находится над overlay */
+    }
+
+    .arrow-down {
+      color: #fff;
+      font-size: 24px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .arrow-down:hover {
+      color: #ddd;
+    }
+
+    section.contact-section {
+      background-color: #000;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .empty-space {
+      height: 100px; /* Adjust the height of the empty space as needed */
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+  /* Increased font-size to make the social icons bigger */
+  .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 15px; /* Adjust the font size as needed */
+  }
+
+  .social-icons a:hover {
+    color: #ffbe0b;
+  }
+
+  .container {
+    padding-top: 50px; /* Add some padding to separate it from the header */
+    text-align: center;
+  }
+
+  .texter {
+    text-align: center;
+    max-width: 800px; /* Set the desired maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add some padding to prevent text from touching the sides */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  section#photo-gallery {
+  margin-top: -150px; /* Adjust the margin value as needed */
+}
+
+  .image article img {
+  width: 100%;
+  height: 400px; /* Set the height of each image slide (adjust as needed) */
+  object-fit: cover; /* Make sure the images cover the entire slide area */
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="../index.html" class="navbar-title">CyprusCy</a>
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../about.html" class="nav-link">About</a>
+    <a href="../contact.html" class="nav-link">Contact</a>
+    <a href="../whycyprus.html" class="nav-link">Why Cyprus?</a>
+  </div>
+
+  <header class="masthead">
+    <div class="dark-overlay"></div> <!-- Добавьте этот див для прозрачной темной темы -->
+    <div class="container">
+      <h1>Horseshoe Bay</h1>
+      <div class="arrow-down" onclick="scrollToPhotoGallery()">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="empty-space"></div>
+  <div class="empty-space"></div>
+
+  <!-- Inside the body tag, after the header section -->
+   <div class="container texter">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <!-- Your text goes here -->
+        <h2 class="text-black mb-4" style="font-weight: bold; font-size: 40px;">Exclusive custom-made villas with private bay</h2>
+        <p class="mb-4" style="color: black; font-size: 20px;">
+          Horseshoe Bay is a unique development, featuring beachfront villas with direct and private access to a picturesque bay and fully maintained beach.
+        </p>
+        <p class="mb-4" style="color: black; font-size: 20px;">
+         Each of these magnificent homes is custom-built to the clients specifications with three to seven bedroom configurations, a 70m2 infinity swimming pool which merges into the architecture and an optional self contained guesthouse.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-space"></div>
+
+
+  <section id="photo-gallery">
+    <div class="all">
+        <input checked type="radio" name="respond" id="desktop">
+          <article id="slider">
+              <h2 style="font-size: 40px;">Photo Gallery</h2>
+              <input checked type="radio" name="slider" id="switch1">
+              <input type="radio" name="slider" id="switch2">
+              <input type="radio" name="slider" id="switch3">
+              <input type="radio" name="slider" id="switch4">
+              <input type="radio" name="slider" id="switch5">
+            <div id="slides">
+              <div id="overflow">
+                <div class="image">
+                  <article><img src="imgs/bay1.jpg"></article>
+                  <article><img src="imgs/bay2.jpg"></article>
+                  <article><img src="imgs/bay3.jpg"></article>
+                  <article><img src="imgs/bay4.jpg"></article>
+                  <article><img src="imgs/bay5.jpg"></article>
+                </div>
+              </div>
+            </div>
+            <div id="controls">
+              <label for="switch1"></label>
+              <label for="switch2"></label>
+              <label for="switch3"></label>
+              <label for="switch4"></label>
+              <label for="switch5"></label>
+            </div>
+            <div id="active">
+              <label for="switch1"></label>
+              <label for="switch2"></label>
+              <label for="switch3"></label>
+              <label for="switch4"></label>
+              <label for="switch5"></label>
+            </div>
+          </article>
+      </div>
+  </section>
+
+    <div class="empty-space"></div>
+
+    <!-- Floor Plan Button and Image -->
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center align-items-center">
+          <div class="col-lg-6 text-center">
+            <!-- Apply the new styles to create a gray background for the floor plan section -->
+            <div class="centered-content">
+              <div class="image-container">
+                <img class="floor-plan-img" src="imgs/06-1_Easy-Resize.com_.jpg" alt="Floor Plan">
+              </div>
+              <div class="button-container">
+                <h2 class="mb-4">3-bedroom villa</h2>
+                <a class="floor-plan-button" href="#" onclick="showFloorPlan('imgs/200m2-4-BR-HSB-Villa-GROUND-24.5.2013-1.jpg')">Floor Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center align-items-center">
+          <div class="col-lg-6 text-center">
+            <!-- Apply the new styles to create a gray background for the floor plan section -->
+            <div class="centered-content">
+              <div class="image-container">
+                <img class="floor-plan-img" src="imgs/bay3.jpg" alt="Floor Plan">
+              </div>
+              <div class="button-container">
+                <h2 class="mb-4">6-bedroom villa</h2>
+                <a class="floor-plan-button" href="#" onclick="showFloorPlan('imgs/neha1.jpg')">Floor Plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="mapsite">
+    <h2>Site on Map</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3251.7390177427797!2d33.773766!3d35.411719000000005!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDI0JzQyLjIiTiAzM8KwNDYnMjUuNiJF!5e0!3m2!1sen!2sus!4v1690983830999!5m2!1sen!2sus" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+    <!-- Contact Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>Contact Us:</p>
+      <p>Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+      <p>Phone: +370 6 5350 220 / +35 7 99 181 606</p>
+      <div class="social-icons">
+        <!-- Increased font-size to make the social icons larger -->
+        <a href="https://twitter.com/your-twitter-profile-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/your-facebook-page-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/your-instagram-profile-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a>
+        <!-- Add more social media icons here if needed -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      &copy; CyprusCy 2023
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome icons (free version) -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+  <script> 
+
+    function showFloorPlan(imagePath) {
+      event.preventDefault(); // Prevent the default scroll behavior
+
+      const fullscreenImage = document.createElement('div');
+      fullscreenImage.classList.add('fullscreen-image');
+      fullscreenImage.innerHTML = `
+        <button class="exit-button" onclick="closeFullscreenImage()">
+          <i class="fas fa-times"></i>
+        </button>
+        <img class="smaller-image" src="${imagePath}" alt="Floor Plan" />
+      `;
+      fullscreenImage.onclick = closeFullscreenImage;
+      document.body.appendChild(fullscreenImage);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeFullscreenImage() {
+      const fullscreenImage = document.querySelector('.fullscreen-image');
+      fullscreenImage.remove();
+      document.body.style.overflow = 'auto';
+    }
+
+    function scrollToPhotoGallery() {
+      const photoGallerySection = document.getElementById('photo-gallery');
+      photoGallerySection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+  </script>
+</body>
+</html>
